@@ -9,12 +9,3 @@
 .dropdown-menu {
     min-width: 8rem !important;
 }
-
-.head {
-    margin: 25px;
-    color: white;
-    background-color: black;
-    min-height: fit-content;
-    width: 95%;
-    position: absolute;
-}
