@@ -13,14 +13,14 @@
 
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/booking.js"></script>
 </head>
 
 <body>
     <div class="container-fluid mb-5">
         <!-- navbar -->
         <div class="row">
-            <div class="col-12 text-center mb-5 p-0">
+            <div class="col-12 text-center p-0">
                 <nav class="navbar navbar-expand-lg bg-light fw-bold web-textcolor fixed-top p-0">
                     <div class="container-fluid shadow py-3">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -61,38 +61,94 @@
                 </nav>
             </div>
         </div>
-        <!-- heading -->
-        <div class="row">
-            <div class="col-12 mt-5 p-2">
-                <span class="d-block p-2 text-bg-dark">Manage Booking</span>
+    </div>
+    <!-- heading -->
+    <div class="row">
+        <div class="col-12 px-12">
+            <h5 class="d-block p-2 text-bg-dark">Manage Booking</h5>
+        </div>
+    </div>
+    <!-- manage booking -->
+    <form action="booking" method="post">
+        <div class="col-12 col-md-9 pt-4 d-flex flex-column justify-content-center">
+            <div class="row">
+                <div class="offset-1 col-10 offset-lg-2 col-lg-8 offset-xl-3 col-xl-6">
+                    <h3 class="card-header mb-3 web-textcolor">
+                        Appointment
+                    </h3>
+                    <div class="card-body pt-4">
+                        <div class="row mb-5">
+                            <div class="col-4 text-left">
+                                <label for="shopname">Shop name: </label>
+                            </div>
+                            <div class="col-8">
+                                <select id="shop-selection" name="shop_preference" class="form-control" required>
+                                    <option value="">Choose a Shop from the List</option>
+                                    <option value="shopname_1">Shop name_1 / Location</option>
+                                    <option value="shopname_2">Shop name_2 / Location</option>
+                                    <option value="shopname_3">Shop name_3 / Location</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-4 text-left">
+                                <label for="service">Service: </label>
+                            </div>
+                            <div class="col-8">
+                                <select id="service-selection" name="service_preference" class="form-control" required>
+                                    <option value="">Choose a Service from the List</option>
+                                    <option value="Service_1">Service_1</option>
+                                    <option value="Service_2">Service_2</option>
+                                    <option value="Service_3">Service_3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-4 text-left">
+                                <label for="bookingdate">Date and time: </label>
+                            </div>
+                            <div class="col-8">
+                                <input id="booking-date" name="booking-date" class="form-control" type="datetime-local"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-4 text-left">
+                                <label for="addphoto">Reference photo (optional): </label>
+                            </div>
+                            <div class="col-8">
+                                <input class="form-control" type="file">
+                            </div>
+                        </div>
+
+                        <div class="row mb-5">
+                            <div class="col-4 text-left">
+                                <label for="addnote">Speacial request: </label>
+                            </div>
+                            <div class="col-8">
+                                <textarea id="message" name="addnote"
+                                    placeholder="Tell us anything else that might be important."
+                                    class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12 text-end">
+                                <button type="reset" class="reset-btn">Reset</button>
+                                <button type="submit" class="confirm-btn">Confirm booking</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- manage booking -->
-        <div class="row align-items-center mt-3">
-            <div class="col-auto">
-                <label for="selectshop" class="col-form-label">Shop Name and Location</label>
-            </div>
-            <div class="col-auto">
-                <input type="text" id="selectshop" class="form-control" aria-describedby="shopname">
-            </div>
-
-
-
-
-
-            <div class="col-auto">
-                <span id="shopname" class="form-text">
-                    Lorem ipsum dolor sit amet.
-                </span>
-            </div>
+    </form>
+    <!-- footer -->
+    <div class=" row fw-bolder p-3">
+        <div class="col-12">
+            <p>Contact Us</p>
+            <p><img src="/Pic/Footer.png" width="250px" alt="phone"></p>
         </div>
-        <!-- footer -->
-        <div class="row fw-bolder p-3">
-            <div class="col-12">
-                <p>Contact Us</p>
-                <p><img src="/Pic/Footer.png" width="250px" alt="phone"></p>
-            </div>
-        </div>
+    </div>
 </body>
 
 </html>

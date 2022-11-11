@@ -1,11 +1,48 @@
 @import url('./color.css');
 
-.bg-home {
-    background-image: url('/Pic/Home-Pic01.png');
-    background-position: center;
-    background-size: cover;
-}
-
 .dropdown-menu {
     min-width: 8rem !important;
+}
+
+body {
+    width: auto;
+    margin: auto;
+    padding: 50px;
+    background-image: url('/Pic/Booking.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+button.reset-btn {
+    height: 45px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    margin-left: 15px;
+}
+
+button.reset-btn:hover {
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+
+button.confirm-btn {
+    height: 45px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+    margin-left: 15px;
+}
+
+button.confirm-btn:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
 }
