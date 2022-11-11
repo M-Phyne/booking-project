@@ -11,8 +11,8 @@ body {
     background-image: url('/Pic/Booking.png');
     background-repeat: no-repeat;
     background-position: right;
-    background-attachment: fixed;
     background-position: 80%;
+    background-position-y: 30%;
 }
 
 button.reset-btn {
