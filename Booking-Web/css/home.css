@@ -19,3 +19,31 @@ body {
     --bs-gutter-x: 0rem;
     --bs-gutter-y: 0;
 }
+
+.description {
+    text-align: left;
+}
+
+.innerbookingbar {
+    width: 100%;
+    background: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+button.booking-btn {
+    height: 40px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button.booking-btn:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
