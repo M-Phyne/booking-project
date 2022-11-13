@@ -15,10 +15,15 @@ body {
     background-position-y: 30%;
 }
 
+.row {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+}
+
 button.reset-btn {
     height: 45px;
-    background: white;
-    color: black;
+    background: black;
+    color: white;
     border-radius: 5px;
     cursor: pointer;
     width: 150px;
@@ -26,9 +31,9 @@ button.reset-btn {
 }
 
 button.reset-btn:hover {
-    background: black;
-    color: white;
-    border: 1px solid black;
+    background: white;
+    color: black;
+    border: 2px solid black;
 }
 
 button.confirm-btn {
@@ -44,5 +49,5 @@ button.confirm-btn {
 button.confirm-btn:hover {
     background: white;
     color: black;
-    border: 1px solid black;
+    border: 2px solid black;
 }
