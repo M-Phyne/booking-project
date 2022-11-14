@@ -2,3 +2,79 @@ body {
     width: 100%;
     padding: 50px;
 }
+
+.loginform {
+    margin: auto;
+    width: 50%;
+}
+
+header.form-control {
+    background-color: black;
+    border-color: black;
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+}
+
+.form-control.login {
+    border-color: black;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.login-btn {
+    text-align: center;
+}
+
+.signup-btn {
+    text-align: center;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+
+button.login-btn {
+    height: 40px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 365px;
+}
+
+button.login-btn:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+button.signup-btn {
+    height: 40px;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 365px;
+}
+
+button.signup-btn:hover {
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.seperate {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1rem;
+    align-items: center;
+}
+
+.seperate::before,
+.seperate::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: currentColor;
+}
