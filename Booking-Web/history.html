@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>My Booking</title>
     <link rel="shortcut icon" href="/Pic/logo-1.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/history.css">
 
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/history.js"></script>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link web-textcolor ps-4" aria-current=" page"
-                                        href="./about.html">ABOUT</a>
+                                        href="about.html">ABOUT</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link web-textcolor ps-4" href="./booking.html">APPOINTMENT</a>
@@ -61,42 +61,72 @@
             </div>
         </div>
     </div>
-    <!-- cards -->
-    <div class="row mb-4">
-        <div class="col-3 pe-5">
-            <div class="card border-0">
-                <img src="/Pic/Photo.png" class="card-img" alt="haircut">
-            </div>
+    <!-- heading -->
+    <div class="row">
+        <div class="col-12 px-12">
+            <h5 class="d-block p-2 text-bg-dark">My Booking</h5>
         </div>
-        <div class="col-9 mt-5">
-            <div class="card border-0">
-                <div class="card-body">
-                    <h4 class="card-title">Lorem </h4>
-                    <h5 class="card-title">Lorem, ipsum dolor.</h5>
-                    <div class="line my-4"></div>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero accusamus nobis
-                        porro sed, vitae vel. Quis, voluptates tempora? Cumque culpa delectus ipsa eaque sunt
-                        repellendus rerum voluptatibus voluptas perferendis autem. Facere quae vero saepe, iusto sed,
-                        doloribus non amet dolorem, ex obcaecati voluptate minus! Distinctio aliquam ad reprehenderit
-                        fugiat, exercitationem aliquid adipisci amet voluptatum recusandae quibusdam non quia inventore
-                        facere maiores odio nisi pariatur, sequi, corrupti minus quam! Iste officiis corporis, dolor
-                        eius ipsam odio adipisci. Consectetur quas tempora explicabo inventore illo veritatis, fuga iste
-                        necessitatibus minus expedita iusto incidunt ab non reiciendis sapiente eaque sunt porro odit
-                        dolores eum vel. Harum officia, rem quis impedit quo odio tenetur? Rem aliquam provident ipsa
-                        maiores voluptas ipsum labore iure minima impedit corrupti eius reiciendis, et magnam quas ea
-                        sequi explicabo neque dolorum nam dolores! Id officiis sapiente quibusdam quidem reiciendis
-                        tenetur consectetur sed dolorem, expedita ullam. Itaque sunt repudiandae veniam ea.</p>
-                    <div class="btn_booking">
-                        <a class="card-text" href="booking.html">
-                            <button type="booking" class="booking-btn">Booking Now</button>
-                        </a>
-                    </div>
+    </div>
+    <!-- progress bar -->
+    <!-- <div class="container">
+        <div class="progress-bar">
+            <div class="step">
+                <div class="bullet">
+                    <span>1</span>
                 </div>
+                <div class="check fas fa-check"></div>
             </div>
+            <div class="step">
+                <div class="bullet">
+                    <span>2</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+        </div> -->
+    <!-- historical data -->
+    <div class="col-12 pt-4 d-flex flex-column">
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Date-Time</th>
+                        <th scope="col">Service</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Edit/Cancel</th>
+                        <th scope="col">Satisfy</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row btn_booking mt-5 text-end">
+            <a class="card-text" href="booking.html">
+                <button type="booking" class="booking-btn">Add more</button>
+            </a>
         </div>
     </div>
     <!-- footer -->
-    <div class=" row fw-bolder p-3">
+    <div class="row fw-bolder p-3">
         <div class="col-12">
             <p>Contact Us</p>
             <p><img src="/Pic/Footer.png" width="250px" alt="phone"></p>
